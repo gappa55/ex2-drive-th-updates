@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "apps": [
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "versionName": "9.1.82.2160",
+      "versionCode": 146029328,
+      "packageName": "com.spotify.music",
+      "minSdk": 24,
+      "sizeBytes": 151367647,
+      "sha256": "0fb9b6f924755b2167bb679629bc19d19e1940cff29d0c47a5fb1866de301d88",
+      "certificateSha256": "6505b181933344f93893d586e399b94616183f04349cb572a9e81a3335e28ffd",
+      "downloadUrl": "https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/spotify-9.1.82.2160.apk",
+      "verifiedOn": "Geely EX2 IHU629G · Android 9",
+      "verificationStatus": "owner_verified",
+      "descriptionEn": "The vehicle owner confirmed this exact version opens and plays music on their Geely EX2.",
+      "descriptionTh": "เจ้าของรถยืนยันว่าเวอร์ชันนี้เปิดแอปและเล่นเพลงบน Geely EX2 ได้แล้ว"
+    }
+  ]
+}
