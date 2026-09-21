@@ -30,8 +30,40 @@
       "downloadUrl": "https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/microg-7.1.1-arm64-v8a.apk",
       "verifiedOn": "Geely EX2 IHU629G · Android 9",
       "verificationStatus": "installation_only",
-      "descriptionEn": "Installed on Geely EX2. MicroG for compatible patched apps; the reported YouTube freezing remains unresolved.",
-      "descriptionTh": "ติดตั้งบน Geely EX2 ได้แล้ว เป็น MicroG สำหรับแอปที่แพตช์ให้รองรับ ส่วนปัญหา YouTube ค้างยังไม่ยืนยันว่าแก้ได้"
+      "descriptionEn": "MicroG for compatible patched apps. Install before YouTube ReVanced in this catalog. The vehicle owner confirmed MicroG installation; earlier Morphe freezing is a separate unresolved result.",
+      "descriptionTh": "ติดตั้งก่อน YouTube ReVanced ในแคตตาล็อกนี้ เจ้าของรถยืนยันว่าติดตั้ง MicroG ได้แล้ว ส่วนอาการค้างของ Morphe ที่ทดสอบก่อนหน้ายังไม่ยืนยันว่าแก้ได้"
+    },
+    {
+      "id": "viu",
+      "name": "VIU",
+      "versionName": "2.29.0",
+      "versionCode": 845,
+      "packageName": "com.viu.phone",
+      "minSdk": 25,
+      "sizeBytes": 27168483,
+      "sha256": "b4dc5da57d77c9d7ee4f8bc97c995b7a866b2bbf42906ff56a952b3a18cdc275",
+      "certificateSha256": "d178494ab6e7900f05053d141db954af16bf46f36f3ada08a1ac08b2b1beb7a5",
+      "downloadUrl": "https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/viu-2.29.0.apk",
+      "verifiedOn": "Geely EX2 IHU629G · Android 9",
+      "verificationStatus": "owner_verified",
+      "descriptionEn": "The vehicle owner confirmed this version installs and works on their Geely EX2. Original VIU APK.",
+      "descriptionTh": "เจ้าของรถยืนยันว่าเวอร์ชันนี้ติดตั้งและใช้งานบน Geely EX2 ได้แล้ว เป็น APK ต้นฉบับของ VIU"
+    },
+    {
+      "id": "youtube-revanced",
+      "name": "YouTube ReVanced",
+      "versionName": "21.13.164",
+      "versionCode": 1561063732,
+      "packageName": "app.revanced.android.youtube",
+      "minSdk": 28,
+      "sizeBytes": 194073693,
+      "sha256": "ab23bb8ff35f6fcb59c2af5910a3b96bc2f6ca53cbfe96c9054f723affa2173f",
+      "certificateSha256": "5d87c9bdc8e368dcf80971f33455db4c2e7dd754e1f288f1162c04b2a4811708",
+      "downloadUrl": "https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/youtube-revanced-21.13.164-vanced-to.apk",
+      "verifiedOn": "Geely EX2 IHU629G · Android 9",
+      "verificationStatus": "owner_verified",
+      "descriptionEn": "The vehicle owner confirmed this version works on their Geely EX2. Install MicroG RE 7.1.1 from this catalog first. Third-party build from vanced.to.",
+      "descriptionTh": "เจ้าของรถยืนยันว่าเวอร์ชันนี้ใช้งานบน Geely EX2 ได้แล้ว ให้ติดตั้ง MicroG RE 7.1.1 ในแคตตาล็อกนี้ก่อน เป็นชุดแอปจาก vanced.to"
     }
   ]
 }

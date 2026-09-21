@@ -27,5 +27,19 @@ The separate catalog includes the unmodified arm64-v8a APK from
 It retains the original signing certificate and embedded notices. The upstream
 project is Apache-2.0; the [license copy](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/MicroG-RE-7.1.1-LICENSE.txt)
 is available beside the catalog APK. This project is not affiliated with MorpheApp.
-Vehicle-owner verification covers installation only; reported YouTube freezing
-is unresolved.
+Vehicle-owner verification of MicroG covers installation. YouTube ReVanced
+21.13.164 has since been reported working; the earlier Morphe freezing is a
+separate unresolved test result.
+
+## APK catalog: VIU and YouTube ReVanced
+
+VIU 2.29.0 is the original PCCW-signed APK, downloaded from APKPure with the
+file hash and signing certificate cross-checked against APKMirror. YouTube
+ReVanced 21.13.164 is a third-party prebuilt APK distributed by vanced.to, not
+an official Google YouTube APK. Neither APK has been changed or re-signed by
+EX2 Drive TH. Their embedded notices and original ownership are retained;
+they are not relicensed under the EX2 application code license.
+
+See [CATALOG-APPS.md](CATALOG-APPS.md) for exact provenance, versions, hashes,
+signing certificates, and vehicle-owner test scope. This project is not
+affiliated with PCCW/VIU, Google/YouTube, ReVanced, or vanced.to.
