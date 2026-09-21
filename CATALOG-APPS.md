@@ -4,6 +4,14 @@ Updated 21 September 2026. Vehicle: Geely EX2, IHU629G, Android 9 / API 28.
 The vehicle owner reported installation and use; no independent long-duration
 playback test or compatibility guarantee for other head-unit firmware is implied.
 
+## MicroG RE 7.1.1
+
+The vehicle owner subsequently confirmed that MicroG RE 7.1.1 works with
+YouTube ReVanced on their Geely EX2. Its catalog status is now `owner_verified`.
+The exact APK, version, package and signer remain unchanged. This does not
+claim compatibility with every patched application or resolve the separate
+Morphe freezing report.
+
 ## VIU 2.29.0
 
 - Package: `com.viu.phone`; version code `845`; minimum API `25`.

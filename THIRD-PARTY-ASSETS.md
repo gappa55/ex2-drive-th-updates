@@ -27,9 +27,9 @@ The separate catalog includes the unmodified arm64-v8a APK from
 It retains the original signing certificate and embedded notices. The upstream
 project is Apache-2.0; the [license copy](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/MicroG-RE-7.1.1-LICENSE.txt)
 is available beside the catalog APK. This project is not affiliated with MorpheApp.
-Vehicle-owner verification of MicroG covers installation. YouTube ReVanced
-21.13.164 has since been reported working; the earlier Morphe freezing is a
-separate unresolved test result.
+The vehicle owner confirmed MicroG RE 7.1.1 works with the catalog YouTube
+ReVanced build on their Geely EX2. This confirmation is specific to that setup;
+the earlier Morphe freezing is a separate test result.
 
 ## APK catalog: VIU and YouTube ReVanced
 

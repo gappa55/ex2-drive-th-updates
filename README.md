@@ -21,7 +21,7 @@ Application code retains its existing GPLv3 license. See LICENSE and THIRD-PARTY
 | แอป | เวอร์ชัน | ผลทดสอบจากเจ้าของรถ Geely EX2 IHU629G / Android 9 |
 | --- | --- | --- |
 | Spotify | 9.1.82.2160 | เปิดแอปและเล่นเพลงได้ |
-| MicroG RE | 7.1.1 (arm64-v8a) | ติดตั้งได้ เป็นส่วนประกอบสำหรับแอปที่รองรับ |
+| MicroG RE | 7.1.1 (arm64-v8a) | ยืนยันว่าใช้งานร่วมกับ YouTube ReVanced บนรถได้ |
 | VIU | 2.29.0 | ติดตั้งและใช้งานได้ |
 | YouTube ReVanced | 21.13.164 จาก vanced.to | ใช้งานได้ ให้ติดตั้ง MicroG RE 7.1.1 ก่อน |
 
