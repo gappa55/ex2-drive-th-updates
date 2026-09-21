@@ -19,3 +19,13 @@ Application code is GPLv3. Third-party assets retain their own rights; approval 
   MPAndroidChart v3.1.0 is fetched via JitPack. Review their source/notices obligations
   before treating this candidate as the final public distribution package.
 
+
+## APK catalog: MicroG RE 7.1.1
+
+The separate catalog includes the unmodified arm64-v8a APK from
+[MorpheApp/MicroG-RE release 7.1.1](https://github.com/MorpheApp/MicroG-RE/releases/tag/7.1.1).
+It retains the original signing certificate and embedded notices. The upstream
+project is Apache-2.0; the [license copy](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/MicroG-RE-7.1.1-LICENSE.txt)
+is available beside the catalog APK. This project is not affiliated with MorpheApp.
+Vehicle-owner verification covers installation only; reported YouTube freezing
+is unresolved.
