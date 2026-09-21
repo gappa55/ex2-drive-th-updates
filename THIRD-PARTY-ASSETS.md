@@ -43,3 +43,12 @@ they are not relicensed under the EX2 application code license.
 See [CATALOG-APPS.md](CATALOG-APPS.md) for exact provenance, versions, hashes,
 signing certificates, and vehicle-owner test scope. This project is not
 affiliated with PCCW/VIU, Google/YouTube, ReVanced, or vanced.to.
+
+## Catalog icons bundled in EX2 Drive TH 1.0.7
+
+The catalog cards use launcher assets from the exact owner-tested APKs: Spotify
+9.1.82.2160, MicroG RE 7.1.1, VIU 2.29.0 and YouTube ReVanced 21.13.164.
+The ReVanced icon comes from its enabled rounded launcher alias. Original
+colors and artwork are retained; these identify the third-party apps and are
+not EX2 branding. Ownership, trademarks and upstream notices remain with
+the respective authors. MicroG's Apache-2.0 notice is linked above.
