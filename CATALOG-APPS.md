@@ -1,6 +1,6 @@
 # APK catalog provenance and vehicle test results
 
-Updated 21 September 2026. Vehicle: Geely EX2, IHU629G, Android 9 / API 28.
+Updated 22 September 2026. Vehicle: Geely EX2, IHU629G, Android 9 / API 28.
 The vehicle owner reported installation and use; no independent long-duration
 playback test or compatibility guarantee for other head-unit firmware is implied.
 
@@ -50,3 +50,15 @@ does not independently show its version. Morphe 21.16.256 remains unverified.
 All catalog entries require exact file size, SHA-256, package/version, minimum
 API and signing-certificate checks before installation. Refreshing this
 catalog does not install apps or alter the EX2 OTA version.
+
+## Dooseries 2.2.0
+
+- Package: `com.gappa.dooseries`; version code `31`; minimum API `24`.
+- Source: exact `app-release.apk` supplied by the vehicle owner for this catalog.
+- Native ABIs: `arm64-v8a`, `armeabi-v7a`, `x86_64`.
+- Bytes: `105638481`.
+- SHA-256: `41ec1f837147ccd4090bb8602ef118f02e4367f7c67b2b925fedd6a7499c9df1`.
+- Signing certificate SHA-256: `b4eef346b6658be7ba724c99810a302333e842cf71e718c7b356141e77acfa90`.
+- Android API 28 signature verification passed using the original APK v2 signature.
+- Vehicle owner explicitly confirmed installation and use on Geely EX2; status `owner_verified`.
+- The APK bytes, signing identity, and embedded notices are preserved without patching or re-signing.

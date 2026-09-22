@@ -64,6 +64,22 @@
       "verificationStatus": "owner_verified",
       "descriptionEn": "The vehicle owner confirmed this version works on their Geely EX2. Install MicroG RE 7.1.1 from this catalog first. Third-party build from vanced.to.",
       "descriptionTh": "เจ้าของรถยืนยันว่าเวอร์ชันนี้ใช้งานบน Geely EX2 ได้แล้ว ให้ติดตั้ง MicroG RE 7.1.1 ในแคตตาล็อกนี้ก่อน เป็นชุดแอปจาก vanced.to"
+    },
+    {
+      "id": "dooseries",
+      "name": "Dooseries",
+      "versionName": "2.2.0",
+      "versionCode": 31,
+      "packageName": "com.gappa.dooseries",
+      "minSdk": 24,
+      "sizeBytes": 105638481,
+      "sha256": "41ec1f837147ccd4090bb8602ef118f02e4367f7c67b2b925fedd6a7499c9df1",
+      "certificateSha256": "b4eef346b6658be7ba724c99810a302333e842cf71e718c7b356141e77acfa90",
+      "downloadUrl": "https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/dooseries-2.2.0.apk",
+      "verifiedOn": "Geely EX2 IHU629G · Android 9",
+      "verificationStatus": "owner_verified",
+      "descriptionEn": "The vehicle owner confirmed this version installs and works on their Geely EX2. Original owner-supplied Dooseries APK.",
+      "descriptionTh": "เจ้าของรถยืนยันว่าเวอร์ชันนี้ติดตั้งและใช้งานบน Geely EX2 ได้แล้ว เป็นไฟล์ Dooseries ต้นฉบับที่เจ้าของแอปส่งมา"
     }
   ]
 }

@@ -52,3 +52,11 @@ The ReVanced icon comes from its enabled rounded launcher alias. Original
 colors and artwork are retained; these identify the third-party apps and are
 not EX2 branding. Ownership, trademarks and upstream notices remain with
 the respective authors. MicroG's Apache-2.0 notice is linked above.
+
+## APK catalog: Dooseries 2.2.0
+
+The vehicle owner supplied the signed Dooseries 2.2.0 APK and confirmed that it
+installs and works on their Geely EX2. The catalog preserves the exact APK and
+its embedded notices without modification or re-signing. Distribution through
+this catalog does not relicense Dooseries or its dependencies under the EX2
+application code license. See CATALOG-APPS.md for file and signer hashes.
