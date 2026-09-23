@@ -60,3 +60,7 @@ installs and works on their Geely EX2. The catalog preserves the exact APK and
 its embedded notices without modification or re-signing. Distribution through
 this catalog does not relicense Dooseries or its dependencies under the EX2
 application code license. See CATALOG-APPS.md for file and signer hashes.
+
+EX2 Drive TH 1.0.8 also bundles the launcher icon extracted from that exact
+owner-supplied Dooseries APK for catalog identification, preserving its artwork
+and colors. This does not change the ownership of the original asset.
