@@ -64,3 +64,9 @@ application code license. See CATALOG-APPS.md for file and signer hashes.
 EX2 Drive TH 1.0.8 also bundles the launcher icon extracted from that exact
 owner-supplied Dooseries APK for catalog identification, preserving its artwork
 and colors. This does not change the ownership of the original asset.
+
+## EX2 Drive TH 1.0.10: local clip sharing
+
+- NanoHTTPD 2.3.1 supplies the embedded HTTP core under BSD-3-Clause. The notice is bundled in the APK and included as NanoHTTPD-BSD-3-Clause.txt. Upstream: https://github.com/NanoHttpd/nanohttpd/tree/nanohttpd-project-2.3.1
+- ZXing Core 3.5.3 creates QR codes locally under Apache-2.0. Its license and NOTICE are bundled in the APK and included as ZXing-Apache-2.0.txt and ZXing-NOTICE.txt. Upstream: https://github.com/zxing/zxing/tree/zxing-3.5.3
+- Per-camera center reference values were recovered from Dual Dashcam 0.8.4 published by swimapps/CentralEXAuto. EX2 independently implements the coordinate math and calibration parser; no decompiled application source is bundled. Vehicle-specific calibration is preferred when readable.
