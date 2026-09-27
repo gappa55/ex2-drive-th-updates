@@ -80,6 +80,22 @@
       "verificationStatus": "owner_verified",
       "descriptionEn": "The vehicle owner confirmed this version installs and works on their Geely EX2. Original owner-supplied Dooseries APK.",
       "descriptionTh": "เจ้าของรถยืนยันว่าเวอร์ชันนี้ติดตั้งและใช้งานบน Geely EX2 ได้แล้ว เป็นไฟล์ Dooseries ต้นฉบับที่เจ้าของแอปส่งมา"
+    },
+    {
+      "id": "carflix",
+      "name": "CarFlix",
+      "versionName": "1.0.1",
+      "versionCode": 2002,
+      "packageName": "com.gappa.carflix",
+      "minSdk": 24,
+      "sizeBytes": 35825058,
+      "sha256": "1f2441f7ee4863875b67a95c704324f645cc8d319ff83de23295e730bd216731",
+      "certificateSha256": "b4eef346b6658be7ba724c99810a302333e842cf71e718c7b356141e77acfa90",
+      "downloadUrl": "https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/carflix-1.0.1-2002.apk",
+      "verifiedOn": "Geely EX2 IHU629G · Android 9",
+      "verificationStatus": "installation_only",
+      "descriptionEn": "The owner reports CarFlix is installed on their Geely EX2. Playback and PiP in this release still need vehicle verification.",
+      "descriptionTh": "เจ้าของรถแจ้งว่าติดตั้ง CarFlix บน Geely EX2 แล้ว การเล่นวิดีโอและ PiP ของเวอร์ชันนี้ยังต้องทดสอบบนรถจริง"
     }
   ]
 }

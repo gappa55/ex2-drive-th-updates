@@ -62,3 +62,18 @@ catalog does not install apps or alter the EX2 OTA version.
 - Android API 28 signature verification passed using the original APK v2 signature.
 - Vehicle owner explicitly confirmed installation and use on Geely EX2; status `owner_verified`.
 - The APK bytes, signing identity, and embedded notices are preserved without patching or re-signing.
+
+## CarFlix 1.0.1 (added 27 September 2026)
+
+- Package: `com.gappa.carflix`; version code `2002`; minimum API `24`.
+- Source: the owner's CarFlix project, [commit `20b4bb9`](https://github.com/gappa55/carflix/commit/20b4bb9) on `codex/carflix-pip-audit` (private source repository).
+- Native ABI: `arm64-v8a` only.
+- Bytes: `35825058`.
+- SHA-256: `1f2441f7ee4863875b67a95c704324f645cc8d319ff83de23295e730bd216731`.
+- Signing certificate SHA-256: `b4eef346b6658be7ba724c99810a302333e842cf71e718c7b356141e77acfa90`.
+- Android API 28 signature verification passed for these exact APK bytes.
+- Prepublication validation: clean Flutter analysis, 33 Flutter tests, four native PiP tests, and one FVP Android 9 integration test passed.
+- Android 9 emulator checks passed fullscreen return to the same task, pause/resume, and two reopen/PiP/close cycles in one process with native AAudio resources removed after each close. The FVP integration check covered real decode, seek, native PiP, playback progression and disposal. These are emulator results, not vehicle playback or PiP verification.
+- The owner reports CarFlix is installed on their Geely EX2; status `installation_only`.
+- That report does not verify installation of this newly built APK, playback, or PiP on the vehicle. Those still require testing of this release on the actual head unit.
+- CarFlix and Dooseries have different package names. The Dooseries entry remains unchanged.
