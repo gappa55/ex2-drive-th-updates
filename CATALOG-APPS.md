@@ -150,3 +150,34 @@ The vehicle owner supplied `Duo-split-pip-testkey.apk` and explicitly requested 
 - The original bytes, manifest, signing identity and embedded notices are preserved without patching or re-signing. Standalone manifest, ZIP CRC and cryptographic signature verification for API 30 passed.
 - The code implements two-app split screen and up to three floating windows using virtual displays. It depends on a compatible root/bridge environment and includes Accessibility/overlay setup commands; these paths were not executed during analysis.
 - On Android 9/API 28 the existing EX2 catalog displays the entry as requiring a newer Android version and disables downloading. No compatibility or installation guard is overridden. A direct release download is available for the owner's separate testing.
+
+## Duo Android 9 experimental port 1.0-a9-test5 (30 October 2026)
+
+The owner asked to decode their Duo APK and try an Android 9 port after requesting its inclusion in this catalog. The active `duo-split-pip` entry now points to this experimental port, replacing the original Android 11-only entry. The original `duo-split-pip-1.0-testkey.apk` asset remains available. Other app entries are unchanged.
+
+- Package: `com.yahooeu2k.ex5.split`; version `1.0-a9-test5`; version code `6`.
+- Minimum API: `28` (Android 9); target API: `33`.
+- Bytes: `132133`.
+- SHA-256: `f62a045e4c70ab2042d31609c94c1ff74ba1fa8fefbabf0103cc46e097ca3781`.
+- API 28 signing certificate SHA-256: `a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc`.
+- Asset: [duo-split-pip-1.0-a9-test5.apk](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/duo-split-pip-1.0-a9-test5.apk).
+- Derived from the exact owner-supplied Duo 1.0 APK, SHA-256 `e204c6070f8555c9e3bad823efc01c5f9046750ad92d41d91b2da4ad66d8a49d`. The source snapshot is preserved. This port is modified and rebuilt; it is not the original upstream binary. No matching original source repository has been established.
+- Signed with the intentionally public AOSP testkey identity used by the original, allowing a same-package test update. It is not a Geely platform signing key and does not itself grant root or system UID.
+
+### Port changes
+
+API 28 fallbacks replace newer window-metrics/window-context/insets calls, while newer APIs remain behind version guards. Virtual-display creation uses the Android 9 API. Touch events use an Android 9 `IInputForwarder` for the exact destination display; no default-display input fallback is used.
+
+The system-UID display daemon delivers its Binder through an app ContentProvider using a scoped external-provider publisher. The provider accepts UID 1000 only, validates the installed-APK token and a live Binder, and exposes no data query or Binder retrieval operation. The temporary publisher has a bounded lifetime, with external-provider leases released on process exit. No SELinux policy or signature check is relaxed.
+
+On API 28, application tasks are created without bringing them to the front, selected by package and Android user, moved to the chosen display, and focused by task ID. This avoids the Android 9 shell-start behavior that could return a fresh task to the main display. Root bootstrap retains the original GMW route and adds bounded fallback to an existing `su` implementation; it does not install or grant root.
+
+### Verification and limits
+
+The exact published test5 APK passes ZIP CRC, standalone manifest, package/version/minSdk, SHA-256 and API 28 cryptographic signature checks. A read-only Android 9/API 28 arm64 emulator at 1920x1080 installed the APK, launched two cold tasks from the real split picker directly onto separate displays, and accepted forwarded button clicks in both apps. A cold PiP smoke test rendered an app on its virtual display and accepted a forwarded button click. Cleanup left zero virtual displays; SELinux remained enforcing.
+
+The unchanged display/PiP backend was also tested in test3 for divider resizing, floating-window resize/drag, the three-window limit, replacement of the oldest window, close/reopen with saved dimensions, and owner-death cleanup. A shell UID 2000 attempt to publish a fake Binder was rejected before state changed; the provider guard is unchanged in test5.
+
+**Root setup is still a real limitation.** The emulator rejects `su` execution by an ordinary app. For runtime validation, the app-generated authenticated root starter was launched from the emulator's already-authorized host ADB root route. This validates the application and display protocol with a prepared root bridge, not automatic root bootstrap on a vehicle. No vehicle was connected, and no actual vehicle installation, root startup, keyboard/IME, media/DRM, or long-duration operation is verified. Android 9 has no corresponding per-display IME switch in this port.
+
+Catalog status remains `unverified`, with empty `verifiedOn`. Refreshing the catalog does not install the APK or update EX2 Drive TH.
