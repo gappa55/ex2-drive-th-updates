@@ -135,3 +135,18 @@ All four new entries are `unverified`, with an empty `verifiedOn`. This records 
 YouTube Music carries platform-dependent signing-key rotation. The catalog pins its API 28 signer (`a2a1ad7ba7f41dfca4514e2afeb90691719af6d0fdbed4b09bbf0ed897701ceb`) for the Android 9 target; a newer Android platform may report a different current signer. This does not justify relaxing signature checks.
 
 Standard microG uses `com.google.android.gms`, is signed by the microG developer, and requires compatible firmware with microG/signature-spoofing support for full functionality. Its manifest also requires the `com.android.location.provider` library. The catalog does not modify firmware or enable signature spoofing. It is separate from the existing `app.revanced.android.gms` MicroG RE entry. Copyright 2013–2025 microG Project Team; Apache License 2.0. The upstream license is attached to the catalog release as `microG-0.3.13.250932-LICENSE.txt`; embedded notices remain unchanged.
+
+## Duo Split / PiP 1.0 test APK (30 October 2026)
+
+The vehicle owner supplied `Duo-split-pip-testkey.apk` and explicitly requested that it be listed for their own installation testing. Status is `unverified` with empty `verifiedOn`; no installation or operation on Geely EX2 is claimed.
+
+- Package: `com.yahooeu2k.ex5.split`; version `1.0`; version code `1`.
+- Minimum API: `30` (Android 11); target API: `33`. This requirement is preserved from the original manifest.
+- Bytes: `115615`.
+- APK SHA-256: `e204c6070f8555c9e3bad823efc01c5f9046750ad92d41d91b2da4ad66d8a49d`.
+- Signing certificate SHA-256: `a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc` (AOSP testkey). This signing identity does not confer Geely platform privileges.
+- Source: exact owner-supplied APK; no matching Android source repository is established. The separately supplied `morluto/rea` link describes an analysis toolkit, not Duo source.
+- Asset: [duo-split-pip-1.0-testkey.apk](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/duo-split-pip-1.0-testkey.apk).
+- The original bytes, manifest, signing identity and embedded notices are preserved without patching or re-signing. Standalone manifest, ZIP CRC and cryptographic signature verification for API 30 passed.
+- The code implements two-app split screen and up to three floating windows using virtual displays. It depends on a compatible root/bridge environment and includes Accessibility/overlay setup commands; these paths were not executed during analysis.
+- On Android 9/API 28 the existing EX2 catalog displays the entry as requiring a newer Android version and disables downloading. No compatibility or installation guard is overridden. A direct release download is available for the owner's separate testing.
