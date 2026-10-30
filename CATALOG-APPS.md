@@ -1,5 +1,7 @@
 # APK catalog provenance and vehicle test results
 
+**Current active catalog — 30 October 2026:** the five recent entries (Google Maps 26.12.07.884026066; YouTube (Google) 21.04.223; YouTube Music (Google) 9.15.51; microG Services 0.3.13.250932; Duo Split / PiP (Android 9 test) 1.0-a9-test5) have been withdrawn at the owner's request. The owner reported Duo did not work in their test and asked to remove these entries. The active catalog contains only Spotify, MicroG RE, VIU, YouTube ReVanced, Dooseries, and CarFlix. The dated sections below retain historical provenance and emulator results; their earlier descriptions of active listings are superseded by this withdrawal.
+
 Updated 30 October 2026. Vehicle: Geely EX2, IHU629G, Android 9 / API 28.
 Historical owner-reported results apply only to their named builds. New entries
 below remain unverified unless explicitly stated; no independent long-duration
@@ -181,3 +183,15 @@ The unchanged display/PiP backend was also tested in test3 for divider resizing,
 **Root setup is still a real limitation.** The emulator rejects `su` execution by an ordinary app. For runtime validation, the app-generated authenticated root starter was launched from the emulator's already-authorized host ADB root route. This validates the application and display protocol with a prepared root bridge, not automatic root bootstrap on a vehicle. No vehicle was connected, and no actual vehicle installation, root startup, keyboard/IME, media/DRM, or long-duration operation is verified. Android 9 has no corresponding per-display IME switch in this port.
 
 Catalog status remains `unverified`, with empty `verifiedOn`. Refreshing the catalog does not install the APK or update EX2 Drive TH.
+
+## Withdrawal of recent test entries (30 October 2026)
+
+Removed from `catalog.json` at the owner's explicit request:
+
+- `google-maps`: Google Maps 26.12.07.884026066 (`com.google.android.apps.maps`).
+- `youtube-google`: YouTube (Google) 21.04.223 (`com.google.android.youtube`).
+- `youtube-music-google`: YouTube Music (Google) 9.15.51 (`com.google.android.apps.youtube.music`).
+- `microg-services`: microG Services 0.3.13.250932 (`com.google.android.gms`).
+- `duo-split-pip`: Duo Split / PiP (Android 9 test) 1.0-a9-test5 (`com.yahooeu2k.ex5.split`).
+
+The owner reported Duo unusable on their vehicle and requested removal of the other four recent entries as well. No specific firmware, root, Google-services, GPS, or playback failure cause is inferred from that report. Prior emulator results do not establish compatibility on the physical vehicle. Historical APK artifacts and provenance are retained; none of these five is offered by the active catalog. This catalog change does not uninstall apps from a device.
