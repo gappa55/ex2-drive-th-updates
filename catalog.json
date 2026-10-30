@@ -160,6 +160,22 @@
       "verificationStatus": "unverified",
       "descriptionEn": "Official standard microG release. Requires firmware with microG/signature-spoofing support for full functionality. Vehicle use is unverified. Separate from MicroG RE.",
       "descriptionTh": "microG รุ่นมาตรฐานจากผู้พัฒนา ต้องใช้เฟิร์มแวร์ที่รองรับ microG และ signature spoofing เพื่อใช้งานได้ครบ ยังไม่ได้ทดสอบบนรถจริง เป็นคนละแอปกับ MicroG RE"
+    },
+    {
+      "id": "duo-split-pip",
+      "name": "Duo Split / PiP",
+      "versionName": "1.0",
+      "versionCode": 1,
+      "packageName": "com.yahooeu2k.ex5.split",
+      "minSdk": 30,
+      "sizeBytes": 115615,
+      "sha256": "e204c6070f8555c9e3bad823efc01c5f9046750ad92d41d91b2da4ad66d8a49d",
+      "certificateSha256": "a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc",
+      "downloadUrl": "https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/duo-split-pip-1.0-testkey.apk",
+      "verifiedOn": "",
+      "verificationStatus": "unverified",
+      "descriptionEn": "Owner-supplied test APK for split screen and floating windows. Requires Android 11+ and a compatible root/bridge setup. Installation and vehicle operation are unverified.",
+      "descriptionTh": "ไฟล์ทดสอบที่ผู้ใช้ส่งมา สำหรับแบ่งจอและหน้าต่างลอย ต้องใช้ Android 11 ขึ้นไปและระบบ root/bridge ที่รองรับ ยังไม่ได้ทดสอบการติดตั้งหรือใช้งานบนรถจริง"
     }
   ]
 }
