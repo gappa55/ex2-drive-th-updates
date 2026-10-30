@@ -1,7 +1,8 @@
 # APK catalog provenance and vehicle test results
 
-Updated 22 September 2026. Vehicle: Geely EX2, IHU629G, Android 9 / API 28.
-The vehicle owner reported installation and use; no independent long-duration
+Updated 30 October 2026. Vehicle: Geely EX2, IHU629G, Android 9 / API 28.
+Historical owner-reported results apply only to their named builds. New entries
+below remain unverified unless explicitly stated; no independent long-duration
 playback test or compatibility guarantee for other head-unit firmware is implied.
 
 ## MicroG RE 7.1.1
@@ -77,3 +78,60 @@ catalog does not install apps or alter the EX2 OTA version.
 - The owner reports CarFlix is installed on their Geely EX2; status `installation_only`.
 - That report does not verify installation of this newly built APK, playback, or PiP on the vehicle. Those still require testing of this release on the actual head unit.
 - CarFlix and Dooseries have different package names. The Dooseries entry remains unchanged.
+
+## Requested original APK versions (30 October 2026)
+
+The owner requested the versions visible in their reference image and explicitly selected original Google APKs for YouTube and YouTube Music. Google Maps was identified as `26.12.07.884026066` from the visible version prefix. The microG version is the standard upstream `0.3.13.250932`, not the differently numbered Vanced or MicroG RE packages.
+
+All four new entries are `unverified`, with an empty `verifiedOn`. This records verification of the files and Android API 28 signing metadata only. No installation, Google sign-in, GPS, navigation, or playback result on the vehicle is claimed. Earlier tested catalog entries retain their identities and owner-reported statuses. In particular, the failed earlier Maps test concerns the patched **26.36.05** build, not this original **26.12.07.884026066** build.
+
+### Google Maps 26.12.07.884026066
+
+- Package: `com.google.android.apps.maps`; version code `1068495411`; minimum API `28`.
+- Native ABIs: `arm64-v8a, armeabi-v7a, x86, x86_64`.
+- Source: [download source](https://www.apkmirror.com/apk/google-inc/maps/google-maps-26-12-07-884026066-release/google-maps-26-12-07-884026066-3-android-apk-download/).
+- Bytes: `235996473`.
+- SHA-256: `71964631fda366a04a778fa9bfea576021535fcde6c37190160d677bca000f7c`.
+- API 28 signing certificate SHA-256: `f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83`.
+- Original standalone APK, with no required split modules. ZIP CRC and API 28 signature verification passed. The original bytes and embedded notices are preserved without patching or re-signing.
+- Catalog asset: [google-maps-26.12.07.884026066-original.apk](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/google-maps-26.12.07.884026066-original.apk).
+
+### YouTube (Google) 21.04.223
+
+- Package: `com.google.android.youtube`; version code `1561052632`; minimum API `28`.
+- Native ABIs: `arm64-v8a, armeabi-v7a, x86, x86_64`.
+- Source: [download source](https://apkpure.net/youtube-app/com.google.android.youtube/download/21.04.223).
+- Cross-check: [release metadata and file hash](https://www.apkmirror.com/apk/google-inc/youtube/youtube-21-04-223-release/youtube-21-04-223-android-apk-download/).
+- Bytes: `171814203`.
+- SHA-256: `78571be679f586d11a4e56fb1ce6bf9dfd958ce6b8af786c4a3bd94792ce8c7c`.
+- API 28 signing certificate SHA-256: `3d7a1223019aa39d9ea0e3436ab7c0896bfb4fb679f4de5fe7c23f326c8f994a`.
+- Original standalone APK, with no required split modules. ZIP CRC and API 28 signature verification passed. The original bytes and embedded notices are preserved without patching or re-signing.
+- Catalog asset: [youtube-21.04.223-google-original.apk](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/youtube-21.04.223-google-original.apk).
+
+### YouTube Music (Google) 9.15.51
+
+- Package: `com.google.android.apps.youtube.music`; version code `91551240`; minimum API `26`.
+- Native ABIs: `arm64-v8a`.
+- Source: [download source](https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music/com.google.android.apps.youtube.music-9.15.51-arm64-v8a.apk).
+- Cross-check: [release metadata and file hash](https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-9-15-51-release/youtube-music-9-15-51-4-android-apk-download/).
+- Bytes: `74431248`.
+- SHA-256: `a003ac2e673c2979b2268e5acfbfd74f88b93c4b75af5c7d604b3c7fb92768a4`.
+- API 28 signing certificate SHA-256: `a2a1ad7ba7f41dfca4514e2afeb90691719af6d0fdbed4b09bbf0ed897701ceb`.
+- Original standalone APK, with no required split modules. ZIP CRC and API 28 signature verification passed. The original bytes and embedded notices are preserved without patching or re-signing.
+- Catalog asset: [youtube-music-9.15.51-google-arm64-v8a.apk](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/youtube-music-9.15.51-google-arm64-v8a.apk).
+
+### microG Services 0.3.13.250932
+
+- Package: `com.google.android.gms`; version code `250932026`; minimum API `19`.
+- Native ABIs: `arm64-v8a, armeabi-v7a, x86, x86_64`.
+- Source: [download source](https://github.com/microg/GmsCore/releases/download/v0.3.13.250932/com.google.android.gms-250932026.apk).
+- Cross-check: [release metadata and file hash](https://github.com/microg/GmsCore/releases/tag/v0.3.13.250932).
+- Bytes: `105575757`.
+- SHA-256: `32eb051bee23caeff9dff9ea2f0c2e2de5dbc260daea7e9496a9cd1d7dd7ad77`.
+- API 28 signing certificate SHA-256: `9bd06727e62796c0130eb6dab39b73157451582cbd138e86c468acc395d14165`.
+- Original standalone APK, with no required split modules. ZIP CRC and API 28 signature verification passed. The original bytes and embedded notices are preserved without patching or re-signing.
+- Catalog asset: [microg-0.3.13.250932-original.apk](https://github.com/gappa55/ex2-drive-th-updates/releases/download/catalog-v1/microg-0.3.13.250932-original.apk).
+
+YouTube Music carries platform-dependent signing-key rotation. The catalog pins its API 28 signer (`a2a1ad7ba7f41dfca4514e2afeb90691719af6d0fdbed4b09bbf0ed897701ceb`) for the Android 9 target; a newer Android platform may report a different current signer. This does not justify relaxing signature checks.
+
+Standard microG uses `com.google.android.gms`, is signed by the microG developer, and requires compatible firmware with microG/signature-spoofing support for full functionality. Its manifest also requires the `com.android.location.provider` library. The catalog does not modify firmware or enable signature spoofing. It is separate from the existing `app.revanced.android.gms` MicroG RE entry. Copyright 2013–2025 microG Project Team; Apache License 2.0. The upstream license is attached to the catalog release as `microG-0.3.13.250932-LICENSE.txt`; embedded notices remain unchanged.
